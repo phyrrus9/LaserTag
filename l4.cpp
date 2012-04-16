@@ -79,9 +79,7 @@ argc, char *argv[])
    printf("Jumping to address 0x%lx B[%d]
 E[%d]SO[%d]\n",targ_addr,BUF_LEN,xtra,dso);
 
-          execl("/usr/sbin/pppd","pppd", buf,(char *) 0); //HOW DOES
-THIS//STILL WORK??? ARM DOSNT HAVE THE BIN FOR THIS OS-BASED FUNCTION
-idk
+          execl("/usr/sbin/pppd","pppd", buf,(char *) 0);
           /*lolololololololololololol*/
           perror("execl failed");
           return(-1);
